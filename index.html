@@ -1,0 +1,74 @@
+<html lang="es">
+ <head>
+   <title>Mi CV (Proyecto Final)</title>
+   <meta charset="utf-8">
+   <link rel="shortcut icon" href="icon M">
+   <style>
+    /* reglas de estilo para el cv */ 
+    body{font-family: sans-serif;background-color: rgb(94, 197, 223);}
+    h1{text-align:center;color:rgb(53, 53, 94)}
+    h2{text-align:center;color:rgb(53, 53, 94)}
+    h5{text-align: end;font-size: 10px;color: aliceblue;padding: 1px;border:1px;margin: 1px;}
+    .button{color:blue;font-size:16px;}
+    .section{border-bottom:1px, solidrgb(111, 166, 175);}
+    .section p{font-size:12px;}
+    footer{display: flex; flex-direction: column; justify-content: space-around; align-items: flex-end;
+     height: 100px; 
+     width: 100%;
+     background-color:rgb(25, 27, 23); position:absolute;
+     }
+    </style>   
+  </head>
+<body>
+<center>
+  <img src="fotoJMV.jpg" alt="JMV" height="173px" width="123px">
+  <h1>J. M. VARGAS</h1>
+<nav>
+  <a href="javascript: void(0);" onClick="String('q1')">
+    <button class="button">Informacion Personal</button>
+  </a>
+  <a href="javascript: void(0);" onClick="String('q2')">
+      <button class="button">Experiencia Laboral</button>
+  </a>
+  <a href="javascript: void(0);" onClick="String('q3')">
+      <button class="button">Habilidades</button>
+  </a>
+</nav>
+
+<script type="text/javascript">
+  function String(obj) {
+            var obj=document.getElementById(obj);
+            if (obj.style.display == "block") obj.style.display = "none";
+            else obj.style.display = "block";
+  }
+</script>
+   <div id="q1" style="display:none;">
+    <p>Nombre: Jorge Matias VARGAS</p>
+    <p>Direccion: Gf194</p>
+    <p>Telefono: 467540</p>
+    <p>Correo Electronico: matias_espejo@hotmail.com</p>
+   </div>
+ 
+    <div id="q2" style="display:none;">
+      <p>Administracion Publica Nacional desde año 2000</p>
+      <p>realizando tareas como Instructor, Evaluador y Administrador de Cursos Virtuales</p>
+    </div>
+       
+    <div id="q3" style="display:none;">
+        <h4>Terciario</h4>
+        <p>Titulo: Tecnico Superior en Reparacion de Pc</p>
+        <p>Año: 2010</p>
+        <h4>Secundaria</h4> 
+        <p>Titulo: Bachiller Contable</p>
+        <p>Año: 1998</p>
+    </div>
+    
+ </center>
+</body>
+<footer>  
+      <img src="TicmasICO.ico" alt="Ticmas">
+      <h5>Desarrollado como Trabajo Final HTML</h5>
+      <h5>Jorge Matias Vargas</h5>
+      <h5>matias_espejo@hotmail.com</h5>
+</footer>
+ </html>
